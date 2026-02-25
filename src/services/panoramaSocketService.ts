@@ -6,6 +6,9 @@ class PanoramaSocketService {
   connect(): void {
     this.socket = io('https://panorama-backend-production.up.railway.app/panorama', {
       reconnection: true,
+      transports: ["websocket", "polling"],
+      withCredentials: true,
+      forceNew: true
     });
 
     this.socket.on('connect', () => {
