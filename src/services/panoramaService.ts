@@ -1,6 +1,6 @@
 import { Panorama } from '../types/panorama';
 
-const API_URL = 'https://panorama-backend-production.up.railway.app/';
+const API_URL = 'https://panorama-backend-production.up.railway.app';
 
 export const panoramaService = {
   async getPanorama(id: string): Promise<Panorama> {
