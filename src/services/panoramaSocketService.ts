@@ -4,7 +4,7 @@ class PanoramaSocketService {
   private socket: Socket | null = null;
 
   connect(): void {
-    this.socket = io('http://localhost:3001/panorama', {
+    this.socket = io('https://panorama-backend-production.up.railway.app//panorama', {
       reconnection: true,
     });
 
