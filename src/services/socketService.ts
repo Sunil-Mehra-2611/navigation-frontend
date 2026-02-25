@@ -11,7 +11,7 @@ class SocketService {
   connect(): Promise<void> {
     return new Promise((resolve, reject) => {
       try {
-        this.socket = io('https://panorama-backend-production.up.railway.app//navigation', {
+        this.socket = io('https://panorama-backend-production.up.railway.app/navigation', {
           reconnection: true,
           reconnectionDelay: 1000,
           reconnectionDelayMax: 5000,
